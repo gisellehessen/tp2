@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle&family=Roboto+Condensed:wght@300;700&display=swap');
+
 /**
  * @author Giselle Hessen <gisellehessen7@gmail.com>
  *
@@ -7,8 +9,10 @@
  * Normalize
  * Utilitaires
  * Charte typographique
- * 
- *
+ * NAVIGUATION PRINCIPALE
+ * INTRODUCTION
+ * FOOTER
+ * CREDITS
  */
 
 /* Normalize
@@ -31,10 +35,7 @@ html {
 max-width: 100%;   
 }
 /* Charte typographique
-   ========================================================================== */
-/**
- * Typographie responsive (Mobile First)
-   ========================================================================
+   ==========================================================================
  * Les valeurs de taille de police suggérées ici sont à titre indicatif.
  * À ajuster selon la direction visuelle et le choix de polices de caractères.
  *
@@ -48,14 +49,6 @@ max-width: 100%;
  *
  * Écran large : 801 et +
  */
-
-
-/* Charte typographique
-   ========================================================================== */
-/* Polices liées */
-/* copier ici l'instruction @import url('...'); proposé par Google Fonts */
-
-@import url('https://fonts.googleapis.com/css2?family=News+Cycle&family=Roboto+Condensed:wght@300;700&display=swap');
 
 /* Base décimale */
 html{
@@ -151,7 +144,7 @@ header{
    header {
       min-height: 433px;
       background-image: url(../images/photo-montage_1000.jpg);
-      background-position: 0 48px;
+      background-position: 0 33px;  /* modification Ève */
       background-size: contain;
       background-repeat: no-repeat;
       font-size: 1.6rem;
@@ -185,6 +178,7 @@ header{
 @media (min-width: 600px) {
    .nav--header .nav--list {
       width: auto;
+      align-self: flex-start; /* ajout Ève */
    }  
 }
 .nav--list {
@@ -204,7 +198,8 @@ justify-content: space-between;
 }
 @media (min-width: 600px) {
   .nav__item {
-      padding: 1rem;
+      /*padding: 1rem;*/
+      margin: 0 1rem;
    }
 }
 .nav__lien:hover {
@@ -290,6 +285,9 @@ margin: 0px;
       background-color: #eeeeee;
       padding: 1rem;
    }
+    .encadres aside{
+        margin-left: 2rem;
+    }
 }
 /* FOOTER */
 footer{
